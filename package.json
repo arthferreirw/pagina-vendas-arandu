@@ -56,6 +56,9 @@
       "scripts": {
             "dev": "vite",
             "build": "vite build",
-            "preview": "vite preview --port 4173 --strictPort"
+            "preview": "vite preview --port 4173 --strictPort",
+            "deploy:netlify": "npx netlify-cli deploy --prod --dir=build",
+            "deploy:vercel": "npx vercel --prod",
+            "deploy:gh": "npx gh-pages -d build"
       }
 }
